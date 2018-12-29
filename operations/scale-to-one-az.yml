@@ -1,0 +1,13 @@
+---
+# Default cf-mysql-deployment deploys a (mostly) HA configuration.
+# Use this override to only deploy single instance of each job,
+# in a single Availability Zone z1.
+- type: replace
+  path: /instance_groups/name=mysql/instances
+  value: 1
+- type: replace
+  path: /instance_groups/name=proxy/instances
+  value: 1
+- type: replace
+  path: /instance_groups/name=arbitrator/azs
+  value: [ z1 ]
