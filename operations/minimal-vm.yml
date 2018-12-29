@@ -18,3 +18,6 @@
 - type: replace
   path: /instance_groups/name=smoke-tests-vm/vm_type
   value: small
+- type: replace
+  path: /instance_groups/name=broker/vm_type
+  value: minimal
