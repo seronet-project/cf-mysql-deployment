@@ -13,7 +13,7 @@
   path: /instance_groups/name=bootstrap-vm/vm_type
   value: small
 - type: replace
-  path: /instance_groups/name=verify-clsuter-schemas-vm/vm_type
+  path: /instance_groups/name=verify-cluster-schemas-vm/vm_type
   value: small
 - type: replace
   path: /instance_groups/name=smoke-tests-vm/vm_type
