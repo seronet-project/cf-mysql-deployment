@@ -65,6 +65,16 @@
                 max_storage_mb: 20
                 max_user_connections: 40
                 name: 20mb
+              - description: Shared MySQL Server
+                id: af51552a-dabb-43a0-b10d-9decde0e640d
+                max_storage_mb: 1024
+                max_user_connections: 40
+                name: 1gb
+              - description: Shared MySQL Server
+                id: da2bd458-dc2e-4ee1-ad8c-ee9d348ab905
+                max_storage_mb: 5120
+                max_user_connections: 40
+                name: 5gb
               tags:
               - mysql
           external_host: ((cf_mysql_external_host))
