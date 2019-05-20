@@ -2,13 +2,13 @@
 # Use vm type minimal and small for cf-mysql-deployment
 - type: replace
   path: /instance_groups/name=mysql/vm_type
-  value: minimal
+  value: sharedcpu
 - type: replace
   path: /instance_groups/name=proxy/vm_type
-  value: minimal
+  value: sharedcpu
 - type: replace
   path: /instance_groups/name=arbitrator/vm_type
-  value: minimal
+  value: sharedcpu
 - type: replace
   path: /instance_groups/name=bootstrap-vm/vm_type
   value: small
@@ -20,4 +20,4 @@
   value: small
 - type: replace
   path: /instance_groups/name=broker/vm_type
-  value: minimal
+  value: sharedcpu
